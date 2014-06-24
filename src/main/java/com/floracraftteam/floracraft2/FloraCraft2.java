@@ -1,7 +1,10 @@
 package com.floracraftteam.floracraft2;
 
+import net.minecraftforge.common.MinecraftForge;
+
 import com.floracraftteam.floracraft2.block.FC2Blocks;
 import com.floracraftteam.floracraft2.core.handlers.FC2CraftingHandler;
+import com.floracraftteam.floracraft2.core.helpers.DropsHelper;
 import com.floracraftteam.floracraft2.core.helpers.LogHelper;
 import com.floracraftteam.floracraft2.core.proxy.CommonProxy;
 import com.floracraftteam.floracraft2.core.reference.FC2Reference;
@@ -33,6 +36,7 @@ public class FloraCraft2 {
 	}
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event){
+		MinecraftForge.EVENT_BUS.register(new DropsHelper());
 		
 	}
 	@Mod.EventHandler
