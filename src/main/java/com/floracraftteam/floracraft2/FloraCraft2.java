@@ -28,7 +28,6 @@ public class FloraCraft2 {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
 		
-		LogHelper.init();
 		FC2Blocks.loadBlocks();
 		FC2Items.loadItems();
 		FC2CraftingHandler.loadRecipes();
