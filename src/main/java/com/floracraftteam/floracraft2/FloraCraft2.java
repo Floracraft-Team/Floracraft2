@@ -1,6 +1,10 @@
 package com.floracraftteam.floracraft2;
 
+import com.floracraftteam.floracraft2.core.proxy.CommonProxy;
+import com.floracraftteam.floracraft2.core.reference.FC2Reference;
+
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -10,6 +14,9 @@ public class FloraCraft2 {
 	
 	@Mod.Instance
 	public static FloraCraft2 instance;
+	
+    @SidedProxy(clientSide = FC2Reference.CLIENTPROXYLOCATION, serverSide = FC2Reference.COMMONPROXYLOCATION)
+	public static CommonProxy proxy;
 	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
