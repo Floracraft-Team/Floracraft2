@@ -1,5 +1,6 @@
 
 #Items
 item.Floracraft2:rawDna.name = "Raw Dna"
+item.Floracraft2:refinedDna = "Refined Dna"
 
 #Blocks
