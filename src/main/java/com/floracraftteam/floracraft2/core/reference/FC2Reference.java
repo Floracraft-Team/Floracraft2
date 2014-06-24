@@ -14,5 +14,17 @@ public class FC2Reference {
 	public static final String REFINEDDNA_NAME = "refinedDna";
 	
 	//Blocks
+	public static final String REFININGTABLE_NAME = "refiningTable";
+	
+	//NBT
+    public static final String DISPLAY = "display";
+    public static final String COLOR = "color";
+    public static final String STATE = "teState";
+    public static final String CUSTOM_NAME = "CustomName";
+    public static final String DIRECTION = "teDirection";
+    public static final String OWNER = "owner";
+    
+    //GUI
+	public static final int REFININGTABLE = 0;
 	
 }

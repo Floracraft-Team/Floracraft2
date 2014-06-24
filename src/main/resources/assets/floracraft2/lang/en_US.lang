@@ -4,3 +4,4 @@ item.Floracraft2:rawDna.name = "Raw Dna"
 item.Floracraft2:refinedDna = "Refined Dna"
 
 #Blocks
+tile.Floracraft2:refiningTable = "Refining Table"
