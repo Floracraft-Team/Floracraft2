@@ -2,6 +2,7 @@ package com.floracraftteam.floracraft2;
 
 import com.floracraftteam.floracraft2.block.FC2Blocks;
 import com.floracraftteam.floracraft2.core.handlers.FC2CraftingHandler;
+import com.floracraftteam.floracraft2.core.helpers.LogHelper;
 import com.floracraftteam.floracraft2.core.proxy.CommonProxy;
 import com.floracraftteam.floracraft2.core.reference.FC2Reference;
 import com.floracraftteam.floracraft2.item.FC2Items;
@@ -24,6 +25,7 @@ public class FloraCraft2 {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event){
 		
+		LogHelper.init();
 		FC2Blocks.loadBlocks();
 		FC2Items.loadItems();
 		FC2CraftingHandler.loadRecipes();

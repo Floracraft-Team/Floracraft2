@@ -9,5 +9,7 @@ public class FC2Reference {
 	public static final String RESOURCESPREFIX = MODID.toLowerCase() + ":";
 	public static final String CLIENTPROXYLOCATION = MODID + ".core.proxy.ClientProxy";
 	public static final String COMMONPROXYLOCATION = MODID + ".core.proxy.CommonProxy";
+	
+	public static final String RAWDNA_NAME = "rawDna";
 
 }
