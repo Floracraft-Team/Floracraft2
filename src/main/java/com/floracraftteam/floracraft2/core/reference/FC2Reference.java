@@ -12,6 +12,7 @@ public class FC2Reference {
 	//Items
 	public static final String RAWDNA_NAME = "rawDna";
 	public static final String REFINEDDNA_NAME = "refinedDna";
+	public static final String SCROLL_NAME = "scroll";
 	
 	//Blocks
 	public static final String REFININGTABLE_NAME = "refiningTable";
@@ -26,5 +27,6 @@ public class FC2Reference {
     
     //GUI
 	public static final int REFININGTABLE = 0;
+	
 	
 }

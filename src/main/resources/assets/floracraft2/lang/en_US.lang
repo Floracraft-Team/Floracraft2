@@ -2,6 +2,7 @@
 #Items
 item.Floracraft2:rawDna.name = "Raw Dna"
 item.Floracraft2:refinedDna = "Refined Dna"
+item.Floracraft2:scroll = "Scroll"
 
 #Blocks
 tile.Floracraft2:refiningTable = "Refining Table"
