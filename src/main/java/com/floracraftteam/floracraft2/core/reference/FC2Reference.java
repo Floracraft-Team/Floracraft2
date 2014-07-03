@@ -5,6 +5,7 @@ public class FC2Reference {
 	public static final String MODID = "FloraCraft2";
 	public static final String MODNAME = "Floracraft 2";
 	public static final String VERSION = "1.7.2-1.0";
+	public static final String GUIFACTORY = "com.floracraftteam.floracraft2.client.gui.FC2GuiFactory";
 	
 	public static final String RESOURCESPREFIX = MODID.toLowerCase() + ":";
 	public static final String CLIENTPROXYLOCATION = "com.floracraftteam.floracraft2.core.proxy.ClientProxy";

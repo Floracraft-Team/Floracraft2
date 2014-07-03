@@ -3,6 +3,7 @@ package com.floracraftteam.floracraft2;
 import net.minecraftforge.common.MinecraftForge;
 
 import com.floracraftteam.floracraft2.block.FC2Blocks;
+import com.floracraftteam.floracraft2.core.handlers.FC2ConfigurationHandler;
 import com.floracraftteam.floracraft2.core.handlers.FC2CraftingHandler;
 import com.floracraftteam.floracraft2.core.helpers.DropsHelper;
 import com.floracraftteam.floracraft2.core.helpers.LogHelper;
@@ -10,13 +11,14 @@ import com.floracraftteam.floracraft2.core.proxy.CommonProxy;
 import com.floracraftteam.floracraft2.core.reference.FC2Reference;
 import com.floracraftteam.floracraft2.item.FC2Items;
 
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="FloraCraft2", name="FloraCraft 2", version="1.7.2-1.0")
+@Mod(modid="FloraCraft2", name="FloraCraft 2", version="1.7.2-1.0", guiFactory = FC2Reference.GUIFACTORY)
 public class FloraCraft2 {
 	
 	@Mod.Instance
@@ -31,6 +33,8 @@ public class FloraCraft2 {
 		FC2Blocks.loadBlocks();
 		FC2Items.loadItems();
 		FC2CraftingHandler.loadRecipes();
+		FC2ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+		FMLCommonHandler.instance().bus().register(new FC2ConfigurationHandler());
 		
 	}
 	@Mod.EventHandler

@@ -14,9 +14,9 @@ public class ContainerRefiningTable extends Container{
 	public ContainerRefiningTable(InventoryPlayer par1InventoryPlayer, IInventory refiningTable)
 	{
 		tileEntity = (TileEntityRefiningTable) refiningTable;
-		this.addSlotToContainer(new SlotRTable(refiningTable, 0, 10, 27));
-		this.addSlotToContainer(new Slot(refiningTable, 1, 15, 30));
-		this.addSlotToContainer(new SlotOutput(refiningTable, 2, 30, 40));
+		this.addSlotToContainer(new SlotRTable(refiningTable, 0, 87, 51));
+		this.addSlotToContainer(new Slot(refiningTable, 1, 54, 51));
+		this.addSlotToContainer(new SlotOutput(refiningTable, 2, 126, 16));
 
 		int var6;
 		int var7;
@@ -29,7 +29,7 @@ public class ContainerRefiningTable extends Container{
 			}
 		}
 
-		// Player inv:
+		// Player inventory:
 
 		for (var6 = 0; var6 < 3; ++var6)
 		{
